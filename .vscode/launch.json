@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Launch (ARM64)",
+        "type": "coreclr",
+        "request": "launch",
+        "preLaunchTask": "buildDebug",
+        "program": "${workspaceFolder}/src/KimonoMac/bin/Debug/net8.0-macos/osx-arm64/KimonoMac.app/Contents/MacOS/KimonoMac",
+        "args": [],
+        "cwd": "${workspaceFolder}",
+        "console": "internalConsole",
+        "stopAtEntry": false
+      },
+      {
+        "name": ".NET Core Attach",
+        "type": "coreclr",
+        "request": "attach"
+      }
+    ]
+  }
