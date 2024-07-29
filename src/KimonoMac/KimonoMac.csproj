@@ -5,6 +5,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>true</ImplicitUsings>
     <SupportedOSPlatformVersion>10.15</SupportedOSPlatformVersion>
+    <AssemblyName>Kimono Designer</AssemblyName>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\KimonoCore.Mac\KimonoCore.Mac.csproj" />
