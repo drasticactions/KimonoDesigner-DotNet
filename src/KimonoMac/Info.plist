@@ -10,8 +10,13 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
-	<key>CFBundleDevelopmentRegion</key>
+	<key>CFBundleLocalizations</key>
+	<array>
 	<string>en</string>
+	<string>ja</string>
+	</array>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>ja</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundlePackageType</key>
@@ -23,7 +28,7 @@
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
 	<key>NSMainStoryboardFile</key>
-	<string>Main</string>
+	<string>MainStoryboard</string>
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/AppIcon.appiconset</string>
 	<key>LSApplicationCategoryType</key>

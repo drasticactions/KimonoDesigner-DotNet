@@ -283,4 +283,11 @@
     <Folder Include="Assets.xcassets\IconAbout.imageset\" />
     <Folder Include="Assets.xcassets\IconSave.imageset\" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="Resources\en.lproj" />
+    <Folder Include="Resources\ja.lproj" />
+    <BundleResource Include="Resources\en.lproj\MainStoryboard.strings" />
+    <BundleResource Include="Resources\ja.lproj\MainStoryboard.strings" />
+  </ItemGroup>
 </Project>
