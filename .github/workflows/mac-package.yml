@@ -1,14 +1,7 @@
 name: mac-package
 
 on:
-  workflow_dispatch:  
-    inputs:
-      checkout-repo:
-        required: true
-        type: string
-      checkout-ref:
-        required: true
-        type: string
+  workflow_dispatch:
 
 jobs:
   package-macos:
@@ -16,9 +9,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          repository: ${{ inputs.checkout-repo }}
-          ref: ${{ inputs.checkout-ref }}
+        
       - name: Install dependencies
         run: |
             export HOMEBREW_NO_AUTO_UPDATE=true
