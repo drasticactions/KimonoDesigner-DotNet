@@ -45,7 +45,7 @@ namespace KimonoMac
 			// Display the welcome window?
 			if (Preferences.ShowWelcomeWindow) {
 				// Yes, get new window
-				var storyboard = NSStoryboard.FromName("Main", null);
+				var storyboard = NSStoryboard.FromName("MainStoryboard", null);
 				var controller = storyboard.InstantiateControllerWithIdentifier("WelcomeWindow") as NSWindowController;
 
 				// Display
