@@ -164,7 +164,7 @@ namespace KimonoMac
 		public override void GetNewWindowForTab(NSObject sender)
 		{
 			// Get new window
-			var storyboard = NSStoryboard.FromName("Main", null);
+			var storyboard = NSStoryboard.FromName("MainStoryboard", null);
 			var controller = storyboard.InstantiateControllerWithIdentifier("MainWindow") as NSWindowController;
 
 			// Display
