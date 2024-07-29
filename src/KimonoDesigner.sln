@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KimonoCore.Mac", "KimonoCore.Mac\KimonoCore.Mac.csproj", "{875AA0A7-EC49-4F6D-B5BF-6BF1C9D5C75A}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "KimonoCore", "KimonoCore\KimonoCore.shproj", "{35B94639-BB12-4729-B05B-25039986B95C}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "TextBase", "TextBase\TextBase.shproj", "{B107A17F-D016-43AD-B859-CEA311A48800}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KimonoMac", "KimonoMac\KimonoMac.csproj", "{92745E40-A5C2-468E-A432-CBAD079B223F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{875AA0A7-EC49-4F6D-B5BF-6BF1C9D5C75A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{875AA0A7-EC49-4F6D-B5BF-6BF1C9D5C75A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{875AA0A7-EC49-4F6D-B5BF-6BF1C9D5C75A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{875AA0A7-EC49-4F6D-B5BF-6BF1C9D5C75A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92745E40-A5C2-468E-A432-CBAD079B223F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92745E40-A5C2-468E-A432-CBAD079B223F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92745E40-A5C2-468E-A432-CBAD079B223F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92745E40-A5C2-468E-A432-CBAD079B223F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

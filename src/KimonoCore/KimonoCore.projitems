@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{35B94639-BB12-4729-B05B-25039986B95C}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>KimonoCore</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)KimonoTool.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Kimono.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)KimonoPortfolio.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)KimonoUndoHandler.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Shapes\KimonoShape.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Shapes\KimonoShapeArrow.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Shapes\KimonoShapeBezier.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Shapes\KimonoShapeGroup.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Shapes\KimonoShapeGroupType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Shapes\KimonoShapeLine.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Shapes\KimonoShapeOval.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Shapes\KimonoShapePolygon.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Shapes\KimonoShapeRect.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Shapes\KimonoShapeRoundRect.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Shapes\KimonoShapeStar.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Shapes\KimonoShapeState.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Shapes\KimonoShapeText.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Shapes\KimonoShapeTriangle.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Shapes\KimonoShapeVector.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Properties\KimonoProperty.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Properties\KimonoPropertyUsage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Properties\KimonoPropertyConnectionPoint.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Properties\KimonoPropertyConnection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ObiScript\ObiScriptResult.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bounds\KimonoBezierPoint.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bounds\KimonoBounds.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bounds\KimonoHandle.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bounds\KimonoHandleConstraint.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bounds\KimonoHandleType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Effects\KimonoBlur.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Effects\KimonoShadow.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Styles\KimonoColor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Styles\KimonoGradient.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Styles\KimonoGradientType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Styles\KimonoStyle.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Styles\KimonoStyleType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Properties\KimonoPropertyRect.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Properties\KimonoPropertyNumber.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Properties\KimonoPropertyStyle.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Properties\KimonoPropertyBoolean.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Properties\KimonoPropertyText.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Properties\KimonoPropertyColor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Properties\KimonoPropertyGradient.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CodeGeneration\CodeOutputOS.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CodeGeneration\CodeOutputLanguage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CodeGeneration\CodeOutputLibrary.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CodeGeneration\KimonoCodeGenerator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CodeGeneration\IKimonoCodeGeneration.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)KimonoSketch.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Properties\IKimonoPropertyConsumer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DScriptFunctionProviders\ConsoleFunctionProvider.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DScriptFunctionProviders\ConvertFunctionProvider.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DScriptFunctionProviders\EngineFunctionProvider.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DScriptFunctionProviders\MathFunctionProvider.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DScriptFunctionProviders\RNGFunctionProvider.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DScript\ScriptClassAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DScript\ScriptEngine.Base.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DScript\ScriptEngine.Block.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DScript\ScriptEngine.Condition.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DScript\ScriptEngine.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DScript\ScriptEngine.Expression.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DScript\ScriptEngine.Factor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DScript\ScriptEngine.FunctionCall.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DScript\ScriptEngine.Logic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DScript\ScriptEngine.Shift.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DScript\ScriptEngine.Statement.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DScript\ScriptEngine.Term.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DScript\ScriptEngine.Ternary.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DScript\ScriptEngine.Unary.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DScript\ScriptException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DScript\ScriptLex.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DScript\ScriptVar.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DScript\ScriptVarLink.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DScript\Utils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ObiScript\ObiScriptEngine.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ObiScript\ObiScriptPortfolio.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Properties\KimonoPropertyLibrary.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)KimonoTextBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)License.txt" />
+    <None Include="$(MSBuildThisFileDirectory)DScript\License.txt" />
+    <None Include="$(MSBuildThisFileDirectory)DScriptFunctionProviders\License.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Shapes\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Properties\" />
+    <Folder Include="$(MSBuildThisFileDirectory)ObiScript\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Bounds\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Effects\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Styles\" />
+    <Folder Include="$(MSBuildThisFileDirectory)CodeGeneration\" />
+    <Folder Include="$(MSBuildThisFileDirectory)DScriptFunctionProviders\" />
+    <Folder Include="$(MSBuildThisFileDirectory)DScript\" />
+  </ItemGroup>
+</Project>
