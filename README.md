@@ -6,6 +6,24 @@ A port of [Kimono Designer](https://github.com/xamarin/kimonodesigner) to .NET M
 
 This is experimental, I offer no support for this application. I did this as a way to try porting a larger scale Xamarin.Mac application into .NET.
 
+## How to run:
+
+### Dependencies
+- .NET 8.0 SDK
+- .NET macOS workload (`dotnet workload install macos`)
+- **NOTE** The macOS workload is not installed by default with a .NET install, nor a .NET MAUI one.
+- Xcode
+
+### VSCode
+- Open the root directory in VSCode and use the Launch tasks to start a debug session. It should automatically build and attach to the session.
+- **NOTE** VSCode does not support Xcode Storyboard syncing. If you update the storyboards, you either need to update the bindings yourself, or use VSMac/Rider to do it for you.
+
+### VSMac
+- This is a .NET 8.0 macOS app and _should_ work with the last edition of VSMac. You need to enable experimental .NET support to launch it.
+
+### Rider
+- Open the solution, deploy. Done.
+
 ## What works:
 
 - Generating SkiaSharp code. If you draw in the canvas, the SkiaSharp code should generate and it (should) work in a application running SkiaSharp 2.81.
