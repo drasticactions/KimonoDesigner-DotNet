@@ -842,21 +842,20 @@ Gw
                                     <action selector="VersionField:" target="qD7-4y-S3k" id="sI5-rj-exq"/>
                                 </connections>
                             </textField>
-                            <box fixedFrame="YES" boxType="custom" borderType="line" translatesAutoresizingMaskIntoConstraints="NO" id="FtX-wi-wCo">
+                            <box fixedFrame="YES" boxType="custom" borderType="none" translatesAutoresizingMaskIntoConstraints="NO" id="FtX-wi-wCo">
                                 <rect key="frame" x="0.0" y="201" width="300" height="291"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <view key="contentView" id="DjN-H4-pyT">
-                                    <rect key="frame" x="1" y="1" width="298" height="289"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="291"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="byI-fY-SLW">
-                                            <rect key="frame" x="29" y="11" width="241" height="268"/>
+                                            <rect key="frame" x="29" y="13" width="241" height="268"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="KimonoLogo" id="axs-lC-WVI"/>
                                         </imageView>
                                     </subviews>
                                 </view>
-                                <color key="fillColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
                             </box>
                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jk3-cF-aeg">
                                 <rect key="frame" x="91" y="15" width="191" height="60"/>
@@ -1089,7 +1088,7 @@ Gw
                         <rect key="frame" x="0.0" y="0.0" width="966" height="466"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <box boxType="custom" borderWidth="0.0" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="t70-ng-1y8">
+                            <box boxType="custom" borderType="none" borderWidth="0.0" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="t70-ng-1y8">
                                 <rect key="frame" x="0.0" y="0.0" width="34" height="466"/>
                                 <view key="contentView" id="Og1-sf-k8e">
                                     <rect key="frame" x="0.0" y="0.0" width="34" height="466"/>
@@ -1335,14 +1334,14 @@ Gw
                                         <rect key="frame" x="160" y="0.0" width="522" height="466"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <subviews>
-                                            <box misplaced="YES" boxType="custom" borderType="line" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="9IG-tf-p6O">
+                                            <box misplaced="YES" boxType="custom" borderType="none" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="9IG-tf-p6O">
                                                 <rect key="frame" x="0.0" y="430" width="522" height="36"/>
                                                 <view key="contentView" id="wXy-e2-4nQ">
-                                                    <rect key="frame" x="1" y="1" width="520" height="34"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="522" height="36"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
                                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ogD-v0-5gp">
-                                                            <rect key="frame" x="93" y="6" width="420" height="17"/>
+                                                            <rect key="frame" x="93" y="8" width="420" height="17"/>
                                                             <textFieldCell key="cell" lineBreakMode="truncatingHead" sendsActionOnEndEditing="YES" title="Path" id="j27-xP-65b">
                                                                 <font key="font" metaFont="smallSystem"/>
                                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -1350,7 +1349,7 @@ Gw
                                                             </textFieldCell>
                                                         </textField>
                                                         <button toolTip="Return to Sketch" translatesAutoresizingMaskIntoConstraints="NO" id="fOV-0Q-sVF">
-                                                            <rect key="frame" x="63" y="5" width="24" height="24"/>
+                                                            <rect key="frame" x="63" y="7" width="24" height="24"/>
                                                             <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="IconBackToTop" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="dU1-ao-RSB">
                                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                                 <font key="font" metaFont="system"/>
@@ -1364,7 +1363,7 @@ Gw
                                                             </connections>
                                                         </button>
                                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Pe6-K8-0qJ">
-                                                            <rect key="frame" x="7" y="8" width="50" height="17"/>
+                                                            <rect key="frame" x="7" y="10" width="50" height="17"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="17" id="ovp-VW-2CY"/>
                                                                 <constraint firstAttribute="width" constant="46" id="uDs-7p-mvX"/>
@@ -1462,7 +1461,6 @@ Gw
                                                                                 <menu key="menu" id="Fdv-Jn-Scs">
                                                                                     <items>
                                                                                         <menuItem title="SkiaSharp" state="on" id="wbB-a7-KA0"/>
-                                                                                        <menuItem title="KimonoCore" id="iPp-OR-DdK"/>
                                                                                     </items>
                                                                                 </menu>
                                                                             </popUpButtonCell>
@@ -1482,9 +1480,6 @@ Gw
                                                                                 <menu key="menu" id="nif-i2-2iq">
                                                                                     <items>
                                                                                         <menuItem title="C#" state="on" id="IBS-Zp-lWN"/>
-                                                                                        <menuItem title="ObiScript" id="TKb-9B-Qvb">
-                                                                                            <modifierMask key="keyEquivalentModifierMask"/>
-                                                                                        </menuItem>
                                                                                     </items>
                                                                                 </menu>
                                                                             </popUpButtonCell>
@@ -1675,14 +1670,14 @@ Gw
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
-                            <box boxType="custom" borderType="line" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="dvb-SY-kyd">
+                            <box boxType="custom" borderType="none" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="dvb-SY-kyd">
                                 <rect key="frame" x="714" y="430" width="252" height="36"/>
                                 <view key="contentView" id="crM-Ed-a75">
-                                    <rect key="frame" x="1" y="1" width="250" height="34"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="252" height="36"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <button toolTip="Border Style Inspector" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VI0-PJ-xAp">
-                                            <rect key="frame" x="130" y="5" width="24" height="24"/>
+                                            <rect key="frame" x="130" y="7" width="24" height="24"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="IconBorderOff" imagePosition="overlaps" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="jOu-qO-Gmx">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1693,7 +1688,7 @@ Gw
                                             </connections>
                                         </button>
                                         <button toolTip="Property Connection Inspector" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8K0-rJ-SRv">
-                                            <rect key="frame" x="164" y="5" width="24" height="24"/>
+                                            <rect key="frame" x="164" y="7" width="24" height="24"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="IconConnectionOff" imagePosition="overlaps" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="C1e-w9-OFT">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1704,7 +1699,7 @@ Gw
                                             </connections>
                                         </button>
                                         <button toolTip="Fill Style Inspector" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dHz-Hh-e3k">
-                                            <rect key="frame" x="96" y="5" width="24" height="24"/>
+                                            <rect key="frame" x="96" y="7" width="24" height="24"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="IconFillOff" imagePosition="overlaps" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="V15-6W-xWN">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1715,7 +1710,7 @@ Gw
                                             </connections>
                                         </button>
                                         <button toolTip="Details Inspector" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ltl-7s-axl">
-                                            <rect key="frame" x="62" y="5" width="24" height="24"/>
+                                            <rect key="frame" x="62" y="7" width="24" height="24"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="IconDetailsOn" imagePosition="overlaps" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Pqd-LR-xTs">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1731,6 +1726,7 @@ Gw
                                     <constraint firstAttribute="width" constant="252" id="Hw1-38-McJ"/>
                                     <constraint firstAttribute="height" constant="36" id="rnh-dA-VTj"/>
                                 </constraints>
+                                <color key="borderColor" red="1" green="0.27058823529411763" blue="0.22745098039215686" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                             </box>
                         </subviews>
                         <constraints>
@@ -3894,7 +3890,7 @@ Gw
                             <autoresizingMask key="autoresizingMask"/>
                             <clipView key="contentView" drawsBackground="NO" id="lkQ-jz-dmy">
                                 <rect key="frame" x="1" y="1" width="239" height="80"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <textView importsGraphics="NO" verticallyResizable="YES" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="hFb-9P-9Ug" customClass="KimonoTextView">
                                         <rect key="frame" x="0.0" y="0.0" width="239" height="80"/>
@@ -3912,7 +3908,7 @@ Gw
                                 <autoresizingMask key="autoresizingMask"/>
                             </scroller>
                             <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="jSD-NN-tgo">
-                                <rect key="frame" x="-15" y="1" width="16" height="0.0"/>
+                                <rect key="frame" x="224" y="1" width="16" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </scroller>
                         </scrollView>
