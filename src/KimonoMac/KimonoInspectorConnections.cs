@@ -114,7 +114,7 @@ namespace KimonoMac
 			// Empty property list
 			AvailableProperties.Clear();
 			PropertyDropdown.RemoveAllItems();
-			PropertyDropdown.AddItem("None");
+			PropertyDropdown.AddItem(NSBundle.MainBundle.GetLocalizedString("None", "None"));
 
 			// Find existing connection
 			KimonoProperty connectedProperty = null;

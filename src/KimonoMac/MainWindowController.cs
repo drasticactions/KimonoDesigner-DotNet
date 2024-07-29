@@ -72,7 +72,7 @@ namespace KimonoMac
 			else
 			{
 				var dlg = new NSSavePanel();
-				dlg.Title = "Save Portfolio";
+				dlg.Title =  NSBundle.MainBundle.GetLocalizedString("Save Portfolio", "Save Portfolio");
 				dlg.AllowedFileTypes = new string[] { "ksp" };
 				dlg.BeginSheet(Window, (rslt) =>
 				{

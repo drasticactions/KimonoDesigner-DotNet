@@ -141,18 +141,18 @@ namespace KimonoMac
 				var group = SelectedShape as KimonoShapeGroup;
 
 				// Configure for groups
-				ShapeType.StringValue = "Group";
+				ShapeType.StringValue = NSBundle.MainBundle.GetLocalizedString("Group", "Group");
 				if (group.GroupType == KimonoShapeGroupType.Collection)
 				{
 					// Configure for ungrouping
 					GroupUngroupButton.Image = NSImage.ImageNamed("IconUngroup");
-					GroupUngroupButton.ToolTip = "Ungroup Shapes";
+					GroupUngroupButton.ToolTip = NSBundle.MainBundle.GetLocalizedString("Ungroup Shapes", "Ungroup Shapes");
 				}
 				else
 				{
 					// Configure for grouping
 					GroupUngroupButton.Image = NSImage.ImageNamed("IconGroup");
-					GroupUngroupButton.ToolTip = "Group Shapes";
+					GroupUngroupButton.ToolTip = NSBundle.MainBundle.GetLocalizedString("Group Shapes", "Group Shapes");
 				}
 				GroupUngroupButton.Hidden = false;
 				EditButton.Enabled = (group.GroupType == KimonoShapeGroupType.Collection);
@@ -160,7 +160,7 @@ namespace KimonoMac
 			else
 			{
 				// Configure for shapes
-				ShapeType.StringValue = "Shape";
+				ShapeType.StringValue = NSBundle.MainBundle.GetLocalizedString("Shape", "Shape");
 				GroupUngroupButton.Hidden = true;
 				EditButton.Enabled = true;
 			}
@@ -170,14 +170,15 @@ namespace KimonoMac
 			{
 				// Configure for finalize
 				EditButton.Image = NSImage.ImageNamed("IconAccept");
-				EditButton.ToolTip = "End Editing";
+				EditButton.ToolTip = NSBundle.MainBundle.GetLocalizedString("End Editing", "End Editing");
 			}
 			else
 			{
 				// Configure for editing
-				var what = (SelectedShape is KimonoShapeGroup) ? "Group" : "Shape";
+				var what = (SelectedShape is KimonoShapeGroup) ? NSBundle.MainBundle.GetLocalizedString("Group", "Group") : NSBundle.MainBundle.GetLocalizedString("Shape", "Shape");
 				EditButton.Image = NSImage.ImageNamed("IconEdit");
-				EditButton.ToolTip = $"Edit {what}";
+				var edit = NSBundle.MainBundle.GetLocalizedString("Edit", "Edit");
+				EditButton.ToolTip = $"{edit} {what}";
 			}
 		}
 

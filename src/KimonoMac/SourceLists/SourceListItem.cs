@@ -26,7 +26,7 @@ namespace KimonoMac
 		public string Title
 		{
 			get { return _title; }
-			set { _title = value; }
+			set { _title = NSBundle.MainBundle.GetLocalizedString(value, value); }
 		}
 
 		/// <summary>
@@ -152,7 +152,7 @@ namespace KimonoMac
 		public SourceListItem(string title)
 		{
 			// Initialize
-			this._title = title;
+			this.Title = title;
 		}
 
 		/// <summary>
@@ -163,7 +163,7 @@ namespace KimonoMac
 		public SourceListItem(string title, string icon)
 		{
 			// Initialize
-			this._title = title;
+			this.Title = title;
 			this._icon = NSImage.ImageNamed(icon);
 		}
 
@@ -176,7 +176,7 @@ namespace KimonoMac
 		public SourceListItem(string title, string icon, ClickedDelegate clicked)
 		{
 			// Initialize
-			this._title = title;
+			this.Title = title;
 			this._icon = NSImage.ImageNamed(icon);
 			this.Clicked = clicked;
 		}
@@ -189,7 +189,7 @@ namespace KimonoMac
 		public SourceListItem(string title, NSImage icon)
 		{
 			// Initialize
-			this._title = title;
+			this.Title = title;
 			this._icon = icon;
 		}
 
@@ -202,7 +202,7 @@ namespace KimonoMac
 		public SourceListItem(string title, NSImage icon, ClickedDelegate clicked)
 		{
 			// Initialize
-			this._title = title;
+			this.Title = title;
 			this._icon = icon;
 			this.Clicked = clicked;
 		}
@@ -215,7 +215,7 @@ namespace KimonoMac
 		public SourceListItem(string title, NSImage icon, string tag)
 		{
 			// Initialize
-			this._title = title;
+			this.Title = title;
 			this._icon = icon;
 			this._tag = tag;
 		}
@@ -230,7 +230,7 @@ namespace KimonoMac
 		public SourceListItem(string title, NSImage icon, string tag, ClickedDelegate clicked)
 		{
 			// Initialize
-			this._title = title;
+			this.Title = title;
 			this._icon = icon;
 			this._tag = tag;
 			this.Clicked = clicked;

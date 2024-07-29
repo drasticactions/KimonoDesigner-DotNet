@@ -92,7 +92,7 @@ namespace KimonoCore
 		/// Gets or sets the name.
 		/// </summary>
 		/// <value>The name.</value>
-		public string Name { get; set; } = "Untitled";
+		public string Name { get; set; } = NSBundle.MainBundle.GetLocalizedString("Untitled", "Untitled");
 
 		/// <summary>
 		/// When converting this Sketch to source code, ouput a method that draws into the

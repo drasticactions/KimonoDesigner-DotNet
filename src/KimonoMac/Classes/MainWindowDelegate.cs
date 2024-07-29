@@ -66,12 +66,12 @@ namespace KimonoMac
 				var alert = new NSAlert()
 				{
 					AlertStyle = NSAlertStyle.Critical,
-					InformativeText = "Save changes to portfolio before closing window?",
-					MessageText = "Save Portfolio",
+					InformativeText = NSBundle.MainBundle.GetLocalizedString("Save changes to portfolio before closing window?", "Save changes to portfolio before closing window?"),
+					MessageText = NSBundle.MainBundle.GetLocalizedString("Save Portfolio", "Save Portfolio"),
 				};
-				alert.AddButton("Save");
-				alert.AddButton("Lose Changes");
-				alert.AddButton("Cancel");
+				alert.AddButton(NSBundle.MainBundle.GetLocalizedString("Save", "Save"));
+				alert.AddButton(NSBundle.MainBundle.GetLocalizedString("Lose Changes", "Lose Changes"));
+				alert.AddButton(NSBundle.MainBundle.GetLocalizedString("Cancel", "Cancel"));
 				var result = alert.RunSheetModal(Window);
 
 				// Take action based on resu;t
@@ -93,7 +93,7 @@ namespace KimonoMac
 						else
 						{
 							var dlg = new NSSavePanel();
-							dlg.Title = "Save Portfolio";
+							dlg.Title = NSBundle.MainBundle.GetLocalizedString("Save Portfolio", "Save Portfolio");
 							dlg.AllowedFileTypes = new string[] { "ksp" };
 							dlg.BeginSheet(Window, (rslt) =>
 							{

@@ -178,7 +178,7 @@ namespace KimonoCore
 		/// </summary>
 		internal void Initialize()
 		{
-			Style.Name = "Custom";
+			Style.Name = NSBundle.MainBundle.GetLocalizedString("Custom", "Custom");
 			Style.StyleType = KimonoStyleType.Custom;
 		}
 		#endregion
@@ -346,7 +346,7 @@ namespace KimonoCore
 			{
 				// Yes, move to a custom style
 				Style = deletedStyle.Clone(false);
-				Style.Name = "Custom";
+				Style.Name = NSBundle.MainBundle.GetLocalizedString("Custom", "Custom");
 				Style.StyleType = KimonoStyleType.Custom;
 			}
 		}

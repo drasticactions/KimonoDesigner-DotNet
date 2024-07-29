@@ -1378,8 +1378,8 @@ namespace KimonoMac
 			EditingProperty = null;
 
 			// Configure Editor
-			TextEditorMode.StringValue = "Preview";
-			TextEditorTitle.StringValue = $"Nothing Selected";
+			TextEditorMode.StringValue = NSBundle.MainBundle.GetLocalizedString("Preview", "Preview");
+			TextEditorTitle.StringValue = NSBundle.MainBundle.GetLocalizedString("Nothing Selected", "Nothing Selected");
 			Text = "";
 			TextEditor.Editable = false;
 
@@ -1401,8 +1401,9 @@ namespace KimonoMac
 			EditingProperty = null;
 
 			// Configure Editor
-			TextEditorMode.StringValue = "Preview";
-			TextEditorTitle.StringValue = $"{KimonoPreviewElement.Name} Code";
+			TextEditorMode.StringValue = NSBundle.MainBundle.GetLocalizedString("Preview", "Preview");
+			var codeString = NSBundle.MainBundle.GetLocalizedString("Code", "Code");
+			TextEditorTitle.StringValue = $"{KimonoPreviewElement.Name} {codeString}";
 			TextEditor.Editable = false;
 
 			// Set OS
@@ -2380,17 +2381,17 @@ namespace KimonoMac
 		public override void ViewDidAppear()
 		{
 			base.ViewDidAppear();
-
+			var untitledText = NSBundle.MainBundle.GetLocalizedString("untitled", "untitled");
 			// Set Window Title
 			if (View.Window.Title == "Window")
 			{
 				if (++App.NewWindowNumber == 0)
 				{
-					View.Window.Title = "untitled";
+					View.Window.Title = untitledText;
 				}
 				else
 				{
-					View.Window.Title = string.Format("untitled {0}", App.NewWindowNumber);
+					View.Window.Title = string.Format($"{untitledText} {0}", App.NewWindowNumber);
 				}
 			}
 

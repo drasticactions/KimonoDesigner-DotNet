@@ -122,8 +122,11 @@ namespace KimonoMac
 		/// </summary>
 		public void UpdateInspector()
 		{
+			var localString = NSBundle.MainBundle.GetLocalizedString("Fill", "Fill");
+			var customFillString = NSBundle.MainBundle.GetLocalizedString("Custom Fill", "Custom Fill");
+
 			// Set values
-			FillCheckbox.Title = (SelectedStyle.FillColor == null) ? "Custom Fill" : $"{SelectedStyle.FillColor.Name} Fill";
+			FillCheckbox.Title = (SelectedStyle.FillColor == null) ? customFillString : $"{SelectedStyle.FillColor.Name} {localString}";
 			FillCheckbox.IntValue = SelectedStyle.HasFill ? 1 : 0;
 			ShowCurrentColor();
 			AntialiaseCheckbox.IntValue = (SelectedStyle.Fill.IsAntialias) ? 1 : 0;
@@ -151,7 +154,7 @@ namespace KimonoMac
 
 			// Populate the list of colors
 			LinkedColorSelector.RemoveAllItems();
-			LinkedColorSelector.AddItem("None");
+			LinkedColorSelector.AddItem(NSBundle.MainBundle.GetLocalizedString("None", "None"));
 			var n = 0;
 			foreach (KimonoColor color in Portfolio.Colors)
 			{
@@ -169,7 +172,7 @@ namespace KimonoMac
 
 			// Populate the list of shadow colors
 			LinkedShadowColor.RemoveAllItems();
-			LinkedShadowColor.AddItem("None");
+			LinkedShadowColor.AddItem(NSBundle.MainBundle.GetLocalizedString("None", "None"));
 			n = 0;
 			foreach (KimonoColor color in Portfolio.Colors)
 			{
@@ -187,7 +190,7 @@ namespace KimonoMac
 
 			// Populate the list of gradients
 			GradientDropdown.RemoveAllItems();
-			GradientDropdown.AddItem("None");
+			GradientDropdown.AddItem(NSBundle.MainBundle.GetLocalizedString("None", "None"));
 			n = 0;
 			foreach (KimonoGradient gradient in Portfolio.Gradients)
 			{
@@ -651,7 +654,9 @@ namespace KimonoMac
 			}
 
 			// Update UI
-			FillCheckbox.Title = (SelectedStyle.FillColor == null) ? "Custom Fill" : $"{SelectedStyle.FillColor.Name} Fill";
+			var localString = NSBundle.MainBundle.GetLocalizedString("Fill", "Fill");
+			var customFillString = NSBundle.MainBundle.GetLocalizedString("Custom Fill", "Custom Fill");
+			FillCheckbox.Title = (SelectedStyle.FillColor == null) ? customFillString : $"{SelectedStyle.FillColor.Name} {localString}";
 			ShowCurrentColor();
 			RaiseShapeModified();
 		}

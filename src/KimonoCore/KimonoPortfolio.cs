@@ -160,7 +160,7 @@ namespace KimonoCore
 			// Add the default style
 			var style = new KimonoStyle()
 			{
-				Name = "Default",
+				Name = NSBundle.MainBundle.GetLocalizedString("Default", "Default"),
 				StyleType = KimonoStyleType.Default
 			};
 			Styles.Add(style);

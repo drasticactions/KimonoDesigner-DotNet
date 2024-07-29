@@ -165,7 +165,8 @@ namespace KimonoMac
 		public void UpdateInspector()
 		{
 			// Set values
-			FrameCheckbox.Title = (SelectedStyle.FrameColor == null) ? "Custom Frame" : $"{SelectedStyle.FrameColor.Name} Frame";
+			var frame = NSBundle.MainBundle.GetLocalizedString("Frame", "Frame");
+			FrameCheckbox.Title = (SelectedStyle.FrameColor == null) ? NSBundle.MainBundle.GetLocalizedString("Custom Frame", "Custom Frame") : $"{SelectedStyle.FrameColor.Name} {frame}";
 			FrameCheckbox.IntValue = SelectedStyle.HasFrame ? 1 : 0;
 			ShowCurrentColor();
 			WidthSlider.FloatValue = SelectedStyle.Frame.StrokeWidth;

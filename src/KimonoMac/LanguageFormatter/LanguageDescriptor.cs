@@ -19,7 +19,7 @@ namespace AppKit.TextKit.Formatter
 		/// </summary>
 		/// <value>The language identifier.</value>
 		public virtual string LanguageIdentifier {
-			get { return "Default"; }
+			get { return NSBundle.MainBundle.GetLocalizedString("Default", "Default"); }
 		}
 
 		/// <summary>

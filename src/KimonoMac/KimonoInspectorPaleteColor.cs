@@ -151,7 +151,7 @@ namespace KimonoMac
 
 			// Populate the list of colors
 			BaseColorSelector.RemoveAllItems();
-			BaseColorSelector.AddItem("None");
+			BaseColorSelector.AddItem(NSBundle.MainBundle.GetLocalizedString("None", "None"));
 			AvailableBaseColors.Clear();
 			var n = 0;
 			foreach (KimonoColor color in Portfolio.Colors)

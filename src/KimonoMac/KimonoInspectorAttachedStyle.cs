@@ -98,17 +98,17 @@ namespace KimonoMac
 				SelectedStyle.StyleType == KimonoStyleType.CustomText)
 			{
 				EditButton.Image = NSImage.ImageNamed("IconStyleAdd");
-				EditButton.ToolTip = "Create new style";
+				EditButton.ToolTip = NSBundle.MainBundle.GetLocalizedString("Create new style", "Create new style");
 			}
 			else
 			{
 				EditButton.Image = NSImage.ImageNamed("IconEdit");
-				EditButton.ToolTip = "Edit attached style";
+				EditButton.ToolTip = NSBundle.MainBundle.GetLocalizedString("Edit attached style", "Edit attached style");
 			}
 
 			// Populate the list of colors
 			StyleSelector.RemoveAllItems();
-			StyleSelector.AddItem("Custom");
+			StyleSelector.AddItem(NSBundle.MainBundle.GetLocalizedString("Custom", "Custom"));
 			var n = 0;
 			foreach (KimonoStyle style in Portfolio.Styles)
 			{
