@@ -73,27 +73,30 @@ namespace KimonoMac
 			base.ViewWillAppear();
 
 			// Grab scroller
-			Scroll = Contents.MainFrame.FrameView.DocumentView.EnclosingScrollView;
+			Scroll = Contents.EnclosingScrollView;
 
 			// Configure preview
-			Scroll.AllowsMagnification = true;
-			Scroll.Magnification = 1.0f;
+			if (Scroll is not null)
+			{
+				Scroll.AllowsMagnification = true;
+				Scroll.Magnification = 1.0f;
+			}
 
 			// Wire-up events
-			Contents.FinishedLoad += (sender, e) =>
-			{
-				// Restore to preview scroll location
-				//if (Scroll != null)
-				//{
-				//	Scroll.ContentView.ScrollToPoint(VisibleRect.Location);
-				//	Scroll.ReflectScrolledClipView(Scroll.ContentView);
-				//	VisibleRect = Scroll.ContentView.DocumentVisibleRect();
-				//}
-
-				// Clear update flag
-				Updating = false;
-				//Contents.Hidden = false;
-			};
+			// Contents.FinishedLoad += (sender, e) =>
+			// {
+			// 	// Restore to preview scroll location
+			// 	//if (Scroll != null)
+			// 	//{
+			// 	//	Scroll.ContentView.ScrollToPoint(VisibleRect.Location);
+			// 	//	Scroll.ReflectScrolledClipView(Scroll.ContentView);
+			// 	//	VisibleRect = Scroll.ContentView.DocumentVisibleRect();
+			// 	//}
+			//
+			// 	// Clear update flag
+			// 	Updating = false;
+			// 	//Contents.Hidden = false;
+			// };
 
 			// Default to What's New
 			WhatsNew();
@@ -161,7 +164,7 @@ namespace KimonoMac
 			if (Updating) return;
 
 			// Save current scroll position
-			Scroll = Contents.MainFrame.FrameView.DocumentView.EnclosingScrollView;
+			Scroll = Contents.EnclosingScrollView;
 			if (Scroll != null)
 			{
 				VisibleRect = Scroll.ContentView.DocumentVisibleRect();
@@ -172,12 +175,12 @@ namespace KimonoMac
 			//Contents.Hidden = true;
 			if (filePath == "")
 			{
-				Contents.MainFrame.LoadHtmlString(text, null);
+				Contents.LoadHtmlString(text, null);
 			}
 			else
 			{
 				var url = NSUrl.CreateFileUrl(filePath, true, null);
-				Contents.MainFrame.LoadHtmlString(text, url);
+				Contents.LoadHtmlString(text, url);
 			}
 
 		}
@@ -193,7 +196,7 @@ namespace KimonoMac
 			if (Updating) return;
 
 			// Save current scroll position
-			Scroll = Contents.MainFrame.FrameView.DocumentView.EnclosingScrollView;
+			Scroll = Contents.EnclosingScrollView;
 			if (Scroll != null)
 			{
 				VisibleRect = Scroll.ContentView.DocumentVisibleRect();
@@ -202,7 +205,7 @@ namespace KimonoMac
 			// Update view contents
 			Updating = true;
 			//Contents.Hidden = true;
-			Contents.MainFrame.LoadRequest(NSUrlRequest.FromUrl(NSUrl.FromString(text)));
+			Contents.LoadRequest(NSUrlRequest.FromUrl(NSUrl.FromString(text)));
 
 		}
 		#endregion

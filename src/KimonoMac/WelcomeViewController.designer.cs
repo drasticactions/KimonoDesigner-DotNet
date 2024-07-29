@@ -14,7 +14,7 @@ namespace KimonoMac
 	partial class WelcomeViewController
 	{
 		[Outlet]
-		WebKit.WebView Contents { get; set; }
+		WebKit.WKWebView Contents { get; set; }
 
 		[Outlet]
 		AppKit.NSButton ShowCheckbox { get; set; }
