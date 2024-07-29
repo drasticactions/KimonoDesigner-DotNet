@@ -45,7 +45,7 @@ namespace KimonoMac
 		/// Initializes a new instance of the <see cref="T:KimonoMac.MainWindowController"/> class.
 		/// </summary>
 		/// <param name="handle">Handle.</param>
-		public MainWindowController(IntPtr handle) : base(handle)
+		public MainWindowController(ObjCRuntime.NativeHandle handle) : base(handle)
 		{
 		}
 		#endregion

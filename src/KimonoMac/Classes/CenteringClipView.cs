@@ -27,7 +27,7 @@ namespace KimonoMac
 		/// Initializes a new instance of the <see cref="T:KimonoMac.CenteringClipView"/> class.
 		/// </summary>
 		/// <param name="handle">Handle.</param>
-		public CenteringClipView(IntPtr handle) : base(handle)
+		public CenteringClipView(ObjCRuntime.NativeHandle handle) : base(handle)
 		{
 
 		}

@@ -34,7 +34,7 @@ namespace KimonoMac
 		/// Initializes a new instance of the <see cref="Rotation.OutlineViewController"/> class.
 		/// </summary>
 		/// <param name="handle">Handle.</param>
-		public SourceListView(IntPtr handle) : base(handle)
+		public SourceListView(ObjCRuntime.NativeHandle handle) : base(handle)
 		{
 
 		}

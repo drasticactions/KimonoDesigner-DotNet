@@ -9,7 +9,7 @@ namespace KimonoMac
 {
 	public partial class WelcomeWindowController : NSWindowController
 	{
-		public WelcomeWindowController (IntPtr handle) : base (handle)
+		public WelcomeWindowController (ObjCRuntime.NativeHandle handle) : base (handle)
 		{
 		}
 	}

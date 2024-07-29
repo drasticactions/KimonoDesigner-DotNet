@@ -47,7 +47,7 @@ namespace KimonoMac
 		/// Initializes a new instance of the <see cref="T:KimonoMac.KimonoInspectorGeneralInfo"/> class.
 		/// </summary>
 		/// <param name="handle">Handle.</param>
-		public KimonoInspectorGeneralInfo(IntPtr handle) : base(handle)
+		public KimonoInspectorGeneralInfo(ObjCRuntime.NativeHandle handle) : base(handle)
 		{
 		}
 		#endregion

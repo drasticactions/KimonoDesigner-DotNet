@@ -61,7 +61,7 @@ namespace KimonoCore.Mac
 		/// Initializes a new instance of the <see cref="T:KimonoCore.Mac.KimonoGradientDesignBar"/> class.
 		/// </summary>
 		/// <param name="handle">Handle.</param>
-		public KimonoGradientDesignPreview(IntPtr handle) : base(handle)
+		public KimonoGradientDesignPreview(ObjCRuntime.NativeHandle handle) : base(handle)
 		{
 
 		}

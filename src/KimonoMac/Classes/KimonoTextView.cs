@@ -24,7 +24,7 @@ namespace KimonoMac
 		/// Initializes a new instance of the <see cref="T:KimonoMac.KimonoTextView"/> class.
 		/// </summary>
 		/// <param name="handle">Handle.</param>
-		public KimonoTextView(IntPtr handle) : base(handle)
+		public KimonoTextView(ObjCRuntime.NativeHandle handle) : base(handle)
 		{
 
 		}

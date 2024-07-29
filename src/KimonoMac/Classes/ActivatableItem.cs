@@ -32,7 +32,7 @@ namespace KimonoMac
 		/// Initializes a new instance of the <see cref="T:KimonoMac.ActivatableItem"/> class.
 		/// </summary>
 		/// <param name="handle">Handle.</param>
-		public ActivatableItem(IntPtr handle) : base(handle)
+		public ActivatableItem(ObjCRuntime.NativeHandle handle) : base(handle)
 		{
 		}
 

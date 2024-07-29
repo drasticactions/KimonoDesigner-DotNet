@@ -74,7 +74,7 @@ namespace KimonoMac
 		/// Initializes a new instance of the <see cref="T:KimonoMac.KimonoInspectorAttachedStyle"/> class.
 		/// </summary>
 		/// <param name="handle">Handle.</param>
-		public KimonoInspectorAttachedStyle(IntPtr handle) : base(handle)
+		public KimonoInspectorAttachedStyle(ObjCRuntime.NativeHandle handle) : base(handle)
 		{
 		}
 		#endregion

@@ -243,7 +243,7 @@ namespace AppKit.TextKit.Formatter
 		/// Initializes a new instance of the <see cref="AppKit.TextKit.Formatter.SourceTextView"/> class.
 		/// </summary>
 		/// <param name="handle">Handle.</param>
-		public SourceTextView (IntPtr handle) : base (handle)
+		public SourceTextView (ObjCRuntime.NativeHandle handle) : base (handle)
 		{
 			// Init
 			Initialize();

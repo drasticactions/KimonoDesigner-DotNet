@@ -48,7 +48,7 @@ namespace KimonoMac
 		/// Initializes a new instance of the <see cref="T:KimonoMac.WelcomeViewController"/> class.
 		/// </summary>
 		/// <param name="handle">Handle.</param>
-		public WelcomeViewController(IntPtr handle) : base(handle)
+		public WelcomeViewController(ObjCRuntime.NativeHandle handle) : base(handle)
 		{
 		}
 		#endregion

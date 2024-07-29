@@ -77,7 +77,7 @@ namespace KimonoMac
 		/// Initializes a new instance of the <see cref="T:KimonoMac.KimonoInspectorGradient"/> class.
 		/// </summary>
 		/// <param name="handle">Handle.</param>
-		public KimonoInspectorGradient(IntPtr handle) : base(handle)
+		public KimonoInspectorGradient(ObjCRuntime.NativeHandle handle) : base(handle)
 		{
 		}
 		#endregion

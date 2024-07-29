@@ -152,7 +152,7 @@ namespace KimonoCore.Mac
 		/// Initializes a new instance of the <see cref="T:KimonoCore.Mac.KimonoDesignSurface"/> class.
 		/// </summary>
 		/// <param name="handle">Handle.</param>
-		public KimonoDesignSurface(IntPtr handle) : base(handle)
+		public KimonoDesignSurface(ObjCRuntime.NativeHandle handle) : base(handle)
 		{
 
 		}

@@ -52,7 +52,7 @@ namespace KimonoMac
 		/// Initializes a new instance of the <see cref="T:KimonoMac.KimonoInspectorText"/> class.
 		/// </summary>
 		/// <param name="handle">Handle.</param>
-		public KimonoInspectorText(IntPtr handle) : base(handle)
+		public KimonoInspectorText(ObjCRuntime.NativeHandle handle) : base(handle)
 		{
 		}
 		#endregion

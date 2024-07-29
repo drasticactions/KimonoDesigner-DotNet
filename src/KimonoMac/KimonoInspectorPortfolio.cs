@@ -49,7 +49,7 @@ namespace KimonoMac
 		#endregion
 
 		#region Constructors
-		public KimonoInspectorPortfolio(IntPtr handle) : base(handle)
+		public KimonoInspectorPortfolio(ObjCRuntime.NativeHandle handle) : base(handle)
 		{
 		}
 		#endregion

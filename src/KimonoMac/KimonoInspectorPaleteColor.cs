@@ -69,7 +69,7 @@ namespace KimonoMac
 		/// Initializes a new instance of the <see cref="T:KimonoMac.KimonoInspectorPaleteColor"/> class.
 		/// </summary>
 		/// <param name="handle">Handle.</param>
-		public KimonoInspectorPaleteColor(IntPtr handle) : base(handle)
+		public KimonoInspectorPaleteColor(ObjCRuntime.NativeHandle handle) : base(handle)
 		{
 		}
 		#endregion

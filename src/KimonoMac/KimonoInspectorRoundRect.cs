@@ -47,7 +47,7 @@ namespace KimonoMac
 		/// Initializes a new instance of the <see cref="T:KimonoMac.KimonoInspectorRoundRect"/> class.
 		/// </summary>
 		/// <param name="handle">Handle.</param>
-		public KimonoInspectorRoundRect(IntPtr handle) : base(handle)
+		public KimonoInspectorRoundRect(ObjCRuntime.NativeHandle handle) : base(handle)
 		{
 		}
 		#endregion

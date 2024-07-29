@@ -43,7 +43,7 @@ namespace KimonoMac
 		#endregion
 
 		#region Constructors
-		public KimonoInspectorPropertyNumber (IntPtr handle) : base (handle)
+		public KimonoInspectorPropertyNumber (ObjCRuntime.NativeHandle handle) : base (handle)
 		{
 		}
 		#endregion

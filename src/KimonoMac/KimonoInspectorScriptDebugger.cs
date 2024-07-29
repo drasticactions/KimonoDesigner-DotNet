@@ -47,7 +47,7 @@ namespace KimonoMac
 		/// Initializes a new instance of the <see cref="T:KimonoMac.KimonoInspectorScriptDebugger"/> class.
 		/// </summary>
 		/// <param name="handle">Handle.</param>
-		public KimonoInspectorScriptDebugger (IntPtr handle) : base (handle)
+		public KimonoInspectorScriptDebugger (ObjCRuntime.NativeHandle handle) : base (handle)
 		{
 		}
 		#endregion

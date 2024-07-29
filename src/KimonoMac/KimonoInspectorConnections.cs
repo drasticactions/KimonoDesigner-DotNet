@@ -59,7 +59,7 @@ namespace KimonoMac
 		#endregion
 
 		#region Constructors
-		public KimonoInspectorConnections (IntPtr handle) : base (handle)
+		public KimonoInspectorConnections (ObjCRuntime.NativeHandle handle) : base (handle)
 		{
 		}
 		#endregion

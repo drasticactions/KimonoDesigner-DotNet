@@ -66,7 +66,7 @@ namespace KimonoMac
 		/// Initializes a new instance of the <see cref="T:KimonoMac.KimonoInspectorFont"/> class.
 		/// </summary>
 		/// <param name="handle">Handle.</param>
-		public KimonoInspectorFont(IntPtr handle) : base(handle)
+		public KimonoInspectorFont(ObjCRuntime.NativeHandle handle) : base(handle)
 		{
 		}
 		#endregion

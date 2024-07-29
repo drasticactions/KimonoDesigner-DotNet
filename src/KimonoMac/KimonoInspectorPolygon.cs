@@ -46,7 +46,7 @@ namespace KimonoMac
 		/// Initializes a new instance of the <see cref="T:KimonoMac.KimonoInspectorPolygon"/> class.
 		/// </summary>
 		/// <param name="handle">Handle.</param>
-		public KimonoInspectorPolygon(IntPtr handle) : base(handle)
+		public KimonoInspectorPolygon(ObjCRuntime.NativeHandle handle) : base(handle)
 		{
 		}
 		#endregion

@@ -268,7 +268,7 @@ namespace KimonoMac
 		/// Initializes a new instance of the <see cref="T:KimonoMac.ViewController"/> class.
 		/// </summary>
 		/// <param name="handle">Handle.</param>
-		public ViewController(IntPtr handle) : base(handle)
+		public ViewController(ObjCRuntime.NativeHandle handle) : base(handle)
 		{
 		}
 		#endregion

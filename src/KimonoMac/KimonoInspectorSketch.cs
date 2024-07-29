@@ -47,7 +47,7 @@ namespace KimonoMac
 		/// Initializes a new instance of the <see cref="T:KimonoMac.KimonoInspectorSketch"/> class.
 		/// </summary>
 		/// <param name="handle">Handle.</param>
-		public KimonoInspectorSketch(IntPtr handle) : base(handle)
+		public KimonoInspectorSketch(ObjCRuntime.NativeHandle handle) : base(handle)
 		{
 		}
 		#endregion
