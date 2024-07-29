@@ -49,4 +49,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: "KimonoMac.dmg"
-          path: ./src/KimonoMac/bin/Release/net8.0-macos/KimonoMac.dmg
+          path: ./src/KimonoMac/bin/Release/net8.0-macos/KimonoDesigner.dmg
