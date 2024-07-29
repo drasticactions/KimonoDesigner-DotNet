@@ -1,6 +1,7 @@
 using System;
 using Foundation;
 using AppKit;
+using System.Reflection;
 
 namespace KimonoMac
 {
@@ -29,6 +30,12 @@ namespace KimonoMac
 			// Display the license for Icons8
 			NSWorkspace.SharedWorkspace.OpenUrl(NSUrl.FromString("https://icons8.com/license/"));
 		}
-		#endregion
-	}
+        #endregion
+
+        public override void ViewDidLoad()
+        {
+            base.ViewDidLoad();
+			this.VersionField.StringValue = GitVersionInformation.InformationalVersion;
+        }
+    }
 }
